@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.grupointegrado.edevan.excalculadora.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero 1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero1"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero 2" />
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/numero2"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/somar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="somar"
+        android:text="+"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/subtrair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtrair"
+        android:text="-"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="multiplicar"
+        android:text="X"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dividir"
+        android:text="/"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limpar"
+        android:text="Limpar"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"/>
+
+     <EditText
+         android:id="@+id/resultado"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="number"/>
+
+</LinearLayout>
